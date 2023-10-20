@@ -1,0 +1,148 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color:peachpuff;
+    padding: 10px;
+    /*background-image: url(./hotel.jpeg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card{
+    width: 350px;
+    height: 515px;
+    margin:100px auto;
+   
+}
+.card-inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 3s;
+    transform-style: preserve-3d;
+}
+.front{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-image:url(./Reshaan.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: orangered;
+    
+}
+.back,.front{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.front button{
+    border: 2px solid goldenrod;
+    width: 120px;
+    height: 2em;
+    border-radius: 50px;
+    background: rgb(12, 12, 12);
+    padding: 8px 20px;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+
+}
+    .back{
+        background: #fff;
+        color:yellow;
+        padding: 20px 40px;
+        background-image: url(./reshaan\ 2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotateY(180deg);
+    }
+.back h1{
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 10px;
+
+}
+.back span{
+    font-weight: 400;
+}
+.back p{
+    font-size: 14px;
+    margin-top: 10px;
+    color: gold;
+}
+.back img{
+    width: 200px;
+
+}
+.row{
+    display: flex;
+    margin-top: 10px;
+    align-content: center;
+    font-size: 15px;
+}
+.col{
+    flex: 2;
+    text-align: center;
+    color: palevioletred;
+    position: relative ;
+}
+.col h2 h3{
+    font-size: 15px;
+
+}
+.col::after{
+    content: "";
+    width: 2px;
+    height: 20px;
+    background: #898900;
+    position: absolute;
+    top: 5px;
+    right: 0;
+
+}
+.col:last-child::after{
+    display: none;
+}
+.col p{
+    margin-top: 5px;
+}
+.back img{
+    width: 60px;
+    margin-top: 3px;
+    display: inline-flex;
+
+
+}
+.back button{
+    margin-top: 2px;
+    border-radius: 24px;
+    width: 30%;
+    background: transparent;
+    color:peachpuff;
+    display: table-row;
+    cursor: pointer;
+    
+}
+.back button:hover{
+    color: red;
+}
+.card:hover .card-inner{
+    transform: rotateY(180deg)
+}
+.front span{
+    color: gold;
+}
